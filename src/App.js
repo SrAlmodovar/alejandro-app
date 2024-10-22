@@ -1,8 +1,9 @@
 import './App.css';
-import './Components/Header.js';
-import './Components/Nav.js';
-import './Components/Main.js';
-import './Components/Footer.js';
+import Header from './Components/Header.js';
+import Nav from './Components/Nav.js';
+import Main from './Components/Main.js';
+import Footer from'./Components/Footer.js';
+
 
 function App() {
   return (
