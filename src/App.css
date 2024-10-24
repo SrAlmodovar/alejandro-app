@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+:root{
+  --main-color: #495E57;
+  --main2-color: #F4CE14;
+  --secondary-color: #EE9972;
+  --secondary2-color: #FBDABB;
+  --secondary3-color: #EDEFEE;
+  --secondary4-color: #333333;
+  --title-font: "Roboto", "Karla";
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Generales */
+
+a {
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Barra nav */
+
+.logoImg {
+  height: 4rem;
+  width: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  height: 5rem;
+  width: auto;
+  font-family: var(--title-font);
+  font-weight: 800;
+  font-size: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+header nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 2rem;
+  text-transform: uppercase;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header nav ul li a{
+  color: var(--secondary4-color);
+  position: relative;
+}
+
+header nav ul li a:hover{
+  color: var(--main-color);
+}
+
+header nav ul li a::before{
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--main-color);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+
+}
+
+header nav ul li a:hover::before{
+  transform: scaleX(1);
 }
