@@ -2,7 +2,9 @@ import React from "react";
 
 function About(){
   return (
-    <p>as</p>
+    <div className="contenedorPrincipal">
+      <p>as</p>
+    </div>
   );
 }
 

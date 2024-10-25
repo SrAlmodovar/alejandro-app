@@ -2,7 +2,11 @@ import React from "react";
 
 function Testimonials(){
   return (
-    <p>as</p>
+    <article className="testimonials">
+      <div className="contenedorPrincipal">
+        <p>as</p>
+      </div>
+    </article>
   );
 }
 

@@ -2,7 +2,11 @@ import React from "react";
 
 function Highlights(){
   return (
-    <p>as</p>
+    <article>
+      <div className="contenedorPrincipal">
+        <p>as</p>
+      </div>
+    </article>
   );
 }
 

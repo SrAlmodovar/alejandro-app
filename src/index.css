@@ -1,18 +1,11 @@
 body {
   margin: 0 auto;
   background-color: var(--secondary3-color);
-  max-width: 1200px;
   font-family: -apple-system, 'Karla', 'Roboto', BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-@media only screen and (max-width: 1200px){
-  body{
-    margin: 0px 20px 0px 20px;
-  }
 }
 
 code {

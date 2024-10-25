@@ -13,35 +13,35 @@ function Header() {
   };
 
   return (
-    <header>
       <nav className="navbar">
-        <div className="logo">
-          <a href="#home">
-            <img className="logoImg" src={Logo} alt="Little Lemon logo"></img>
-          </a>
-        </div>
+        <div className="contenedorPrincipal">
+          <div className="logo">
+            <a href="#home">
+              <img className="logoImg" src={Logo} alt="Little Lemon logo"></img>
+            </a>
+          </div>
 
-        {/* Botón para mostrar/ocultar el menú en pantallas pequeñas */}
-        <a className="botonMenu"
-          href="#enlacesMenu"
-          onClick={(e) => {
-            e.preventDefault(); // Evita que el enlace se comporte como un link y haga scroll
-            estadoMenu(); // Alterna la visibilidad del menú al hacer clic
-          }}
-        >
-          <img src={Menusvg} alt="Menu Boton"></img>
-        </a>
-        {/* Lista de enlaces del menú. La clase cambia entre "visible" y "hidden" según el estado menuVisible */}
-        <ul className={`enlacesMenu ${menuVisible ? "visible" : "oculto"}`}>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#menu">Menu</a></li>
-          <li><a href="#reservations">Reservations</a></li>
-          <li><a href="#orderonline">Order Online</a></li>
-          <li><a href="#login">Login</a></li>
-        </ul>
+          {/* Botón para mostrar/ocultar el menú en pantallas pequeñas */}
+          <a className="botonMenu"
+            href="#enlacesMenu"
+            onClick={(e) => {
+              e.preventDefault(); // Evita que el enlace se comporte como un link y haga scroll
+              estadoMenu(); // Alterna la visibilidad del menú al hacer clic
+            }}
+          >
+            <img src={Menusvg} alt="Menu Boton"></img>
+          </a>
+          {/* Lista de enlaces del menú. La clase cambia entre "visible" y "hidden" según el estado menuVisible */}
+          <ul className={`enlacesMenu ${menuVisible ? "visible" : "oculto"}`}>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#reservations">Reservations</a></li>
+            <li><a href="#orderonline">Order Online</a></li>
+            <li><a href="#login">Login</a></li>
+          </ul>
+        </div>
       </nav>
-    </header>
   );
 }
 
