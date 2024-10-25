@@ -1,9 +1,9 @@
 import React from "react";
 
-function Main(){
+function Testimonials(){
   return (
     <p>as</p>
   );
 }
 
-export default Main;
+export default Testimonials;

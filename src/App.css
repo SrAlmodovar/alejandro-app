@@ -113,7 +113,7 @@ header nav ul li a:hover::before {
     display: flex; /* Mostrar menú cuando esté visible */
   }
 
-  .enlacesMenu.hidden {
+  .enlacesMenu.oculto {
     display: none; /* Ocultar menú cuando esté oculto */
   }
 }
