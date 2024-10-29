@@ -17,6 +17,7 @@ a {
 img {
   max-height: 30rem;
   width: auto;
+  border-radius: 20px;
 }
 
 h1 {
@@ -40,6 +41,32 @@ header, footer, .testimonials{
   background-color: var(--main-color);
 }
 
+button {
+  font-size: 30px;
+  background-color: var(--main2-color);
+  font-family: var(--title-font);
+  color: var(--secondary4-color);
+  border-radius: 15px;
+  height: 80px;
+  width: 300px;
+  font-weight: 800;
+  box-shadow: 0px 5px 5px var(--secondary4-color);
+  border: 3px solid var(--secondary4-color);
+}
+
+button:hover {
+  background-color:#ffd500;
+  color: black;
+  box-shadow: 2px 5px 5px var(--secondary4-color);
+  transition: 0.2s;
+}
+
+@media only screen and (max-width: 1280px) {
+  nav, .heroBoxPrincipal {
+    margin: 0px 20px 0px 20px;
+  }
+}
+
 /* Barra nav */
 
 .logoImg {
@@ -47,14 +74,13 @@ header, footer, .testimonials{
   width: auto;
 }
 
-.navbar .contenedorPrincipal{
+.navBar{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 5rem;
-  width: auto;
   font-family: var(--title-font);
   font-weight: 800;
+  height: 80px;
   font-size: 20px;
 }
 
@@ -118,12 +144,12 @@ nav ul li a:hover::before {
     align-items: center;
     gap: 1rem;
     position: absolute; /* Posicionamos el menú de forma absoluta */
-    top: 5rem; /* Aseguramos que el menú aparezca justo debajo de la barra de navegación */
+    top: 3.5rem; /* Aseguramos que el menú aparezca justo debajo de la barra de navegación */
     right: 0; /* Alineamos el menú a la derecha */
     background-color: var(--main-color); /* Le damos un color de fondo */
     width: 100%; /* El menú ocupa el ancho completo de la pantalla */
     padding: 1rem; /* Agregamos un padding para que los enlaces no queden pegados al borde */
-    box-shadow: 0px 4px 8px var(--main-color); /* Sombra para dar un efecto de caja */
+    box-shadow: 0px 10px 10px var(--secondary4-color); /* Sombra para dar un efecto de caja */
     z-index: 1000; /* Aseguramos que el menú esté por encima de otros elementos */
   }
   nav ul li a::before {
@@ -145,3 +171,52 @@ nav ul li a:hover::before {
 }
 
 /* Seccion Hero */
+
+.heroBoxPrincipal {
+  display: flex;
+  position: relative;
+  overflow: visible;
+  gap: 20px;
+}
+
+.heroBox1 {
+  padding-bottom: 20px;
+}
+
+.heroBox1 p{
+color: var(--secondary3-color);
+max-width: 500px;
+}
+
+.heroBox2 {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  overflow: visible;
+}
+
+.heroImg {
+width: 700px;
+height: 450px;
+object-fit: cover;
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .heroImg {
+    height: auto;
+    width: 100%;
+    max-height: 350px;
+   }
+   .heroBox1 {
+    width: 100%;
+    }
+    .heroBox2{
+      position: static;
+      justify-content: center;
+      width: 100%;
+    }
+}

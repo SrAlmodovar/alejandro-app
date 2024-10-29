@@ -13,8 +13,8 @@ function Header() {
   };
 
   return (
-      <nav className="navbar">
-        <div className="contenedorPrincipal">
+      <nav>
+        <div className="navBar contenedorPrincipal">
           <div className="logo">
             <a href="#home">
               <img className="logoImg" src={Logo} alt="Little Lemon logo"></img>
