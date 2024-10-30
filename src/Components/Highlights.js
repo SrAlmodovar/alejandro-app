@@ -1,30 +1,24 @@
 import React from "react";
-import LemonDessert from "../Icons_assets/lemon dessert.jpg";
-import Bruchetta from "../Icons_assets/bruchetta.svg";
-import GreekSalad from "../Icons_assets/greek salad.jpg";
+import {Dishes} from "./Dishes.js";
 
 function Highlights(){
   return (
-    <article className="contenedorPrincipal">
+    <section className="contenedorPrincipal">
       <div className="highBox1">
         <h2>Specials</h2>
         <button>Online Menu</button>
       </div>
-      <div className="highBox2">
-        <div className="highBoxDish">
-        <img src={Bruchetta} alt="Bruchetta"></img>
-        <p>s</p>
-        </div>
-        <div className="highBoxDish">
-        <img src={GreekSalad} alt="Greek salad"></img>
-          <p>s</p>
-        </div>
-        <div className="highBoxDish">
-        <img src={LemonDessert} alt="Lemon dessert"></img>
-        <p>s</p>
-        </div>
-      </div>
-    </article>
+      <article className="highBox2">
+        {Dishes.map((dish) => (
+          <div key={dish.id} className="highBoxDish">
+            <img src={dish.img} alt={dish.name} />
+            <h3>{dish.name}</h3>
+            <p>{dish.price}$</p>
+            <p>{dish.description}</p>
+          </div>
+        ))}
+      </article>
+    </section>
   );
 }
 

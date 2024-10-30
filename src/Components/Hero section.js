@@ -1,5 +1,4 @@
 import React from "react";
-import Restaurantimage from "../Icons_assets/restauranfood.jpg";
 
 function Herosection(){
   return (
@@ -12,7 +11,7 @@ function Herosection(){
         <button>Reserve a table</button>
         </div>
         <div className="heroBox2">
-          <img className="heroImg" src={Restaurantimage} alt="Little Lemon hero section"></img>
+          <img className="heroImg" src="/Icons_assets/restauranfood.webp" alt="Little Lemon hero section"></img>
         </div>
       </div>
     </header>
