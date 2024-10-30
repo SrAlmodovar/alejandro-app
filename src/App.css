@@ -243,6 +243,11 @@ height: 350px;
 
 /* Seccion Highlights */
 
+.slick-slide {
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+
 .highBox1 {
   display: flex;
   justify-content: space-between;
@@ -250,16 +255,15 @@ height: 350px;
 }
 
 .highBox2 {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  padding-top: 20px;
+  padding: 20px;
 }
 
 .highBoxDish {
  background-color: var(--secondary5-color);
- width: 350px;
+ min-height: 450px;
+ height: auto;
  border-radius: 20px;
+
 }
 
 .highBoxDish img{

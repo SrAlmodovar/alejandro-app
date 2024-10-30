@@ -5,6 +5,8 @@ import Herosection from './Components/Hero section.js';
 import Highlights from './Components/Highlights.js';
 import Testimonials from './Components/Testimonials.js';
 import About from './Components/About.js';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 
 function App() {
