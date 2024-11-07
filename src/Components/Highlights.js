@@ -40,11 +40,19 @@ function Highlights(){
         <Slider {...settings}>
           {Dishes.map((dish) => (
             <div key={dish.id} className="highBoxDish">
-              <img src={dish.img} alt={dish.name} />
-              <h3>{dish.name}</h3>
-              <p>{dish.price}$</p>
-              <p>{dish.description}</p>
-              </div>
+              <img src={dish.img} loading="lazy" alt={dish.name} />
+                <div className="highBoxDishInfo">
+                 <div className="highBoxDishTitle">
+                  <h3>{dish.name}</h3>
+                  <p>{dish.price}$</p>
+                 </div>
+                  <p>{dish.description}</p>
+                  <div className="highBoxDishOrder">
+                    <p>Order a delivery</p>
+                    <img src="/Icons_assets/moped.svg" alt="moped delivery"></img>
+                  </div>
+                </div>
+            </div>
             ))}
         </Slider>
       </article>
