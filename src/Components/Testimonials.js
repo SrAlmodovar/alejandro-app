@@ -30,7 +30,7 @@ function Testimonials(){
     slidesToScroll: 1,
     autoplay: true,
     speed: 3000,
-    autoplaySpeed: 200,
+    autoplaySpeed: 3000,
     cssEase: "linear",
     responsive: [
       {
