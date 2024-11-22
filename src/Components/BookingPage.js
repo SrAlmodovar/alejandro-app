@@ -67,6 +67,7 @@ function BookingPage() {
 
   return (
     <div>
+      {/* El formulario de reservas siempre se muestra aquí */}
       <BookingForm availableTimes={availableTimes} updateTimes={updateTimes} />
     </div>
   );
