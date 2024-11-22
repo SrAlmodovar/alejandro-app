@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# Little Lemon - Mediterranean Restaurant Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to **Little Lemon**, a beautifully crafted, responsive, and accessible website for a Mediterranean restaurant. This web application is built using **React**, with a focus on clean design, optimal performance, and seamless user experience. Whether you're looking to browse the menu, make a reservation, or just get a taste of our delicious Mediterranean dishes, you'll find it all here!
 
-## Available Scripts
+## Table of Contents
+1. [About](#about)
+2. [Features](#features)
+3. [Technologies Used](#technologies-used)
+4. [Installation](#installation)
+5. [Usage](#usage)
+6. [Contributing](#contributing)
+7. [License](#license)
 
-In the project directory, you can run:
+## About
+**Little Lemon** brings the fresh flavors of the Mediterranean right to your screen. The website is designed with a single-page layout, ensuring a smooth and fast browsing experience. The application includes a **reservation component** where users can easily book a table at the restaurant. Built with React, the website ensures an engaging and modern experience.
 
-### `npm start`
+## Features
+- **Single-Page Application (SPA)**: The entire site is a single page for a seamless experience, without unnecessary reloads.
+- **Interactive Menu**: Browse our Mediterranean dishes with images and descriptions.
+- **Reservation Component**: A functional component allowing users to easily book a table at the restaurant.
+- **Responsive Design**: Fully functional across all devices (mobile, tablet, desktop).
+- **Accessibility**: Designed to be accessible to all users with features like keyboard navigation and screen reader support.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
+This web application uses the following technologies to ensure a smooth, modern, and scalable experience:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **React**: A JavaScript library for building user interfaces, enabling fast rendering and interactive elements.
+- **HTML5**: Semantic HTML for accessible content.
+- **CSS3**: Styling with modern layout techniques such as Flexbox and Grid, ensuring the website is responsive.
+- **JavaScript**: For dynamic interactivity and enhancing user experience.
+- **React Hooks** (`useState`, `useEffect`): For managing state and handling side effects in functional components.
+- **React Router**: For navigation within the single-page application.
+- **WCAG 2.1**: Implementing web accessibility guidelines for a better experience for all users.
 
-### `npm test`
+## Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To get started with **Little Lemon** on your local machine, follow these steps:
 
-### `npm run build`
+1. **Clone the Repository:**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   git clone https://github.com/SrAlmodovar/alejandro-app.git
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Make sure you have [Node.js](https://nodejs.org/) installed, then run:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  npm install
+  
+## Start the Development Server:
 
-### `npm run eject`
+Once the dependencies are installed, you can start the app by running:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+  npm start
+  
+## Usage
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Once the app is running, you can explore the following features:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Menu**: View the Mediterranean dishes, descriptions, and prices.
+- **Reservation**: Book a table by filling out the reservation form.
+  
+The site is fully responsive and should automatically adjust to your screen size, providing an optimal experience whether you're on a phone, tablet, or desktop.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Contributing
 
-## Learn More
+We welcome contributions to Little Lemon! If you'd like to improve this project, please follow these steps:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Fork the repository by clicking the "Fork" button on the top right of the repository page.
+- Create a new branch (git checkout -b feature-name).
+- Make your changes in the new branch.
+- Commit your changes (git commit -m 'Add new feature').
+- Push to your branch (git push origin feature-name).
+- Open a pull request to merge your changes.
+- Please ensure that your code follows the best practices for accessibility, responsiveness, and clean code. We also ask that you test your code thoroughly before submitting a pull request.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License - see the LICENSE file for details.
