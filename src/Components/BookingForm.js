@@ -46,21 +46,24 @@ function BookingForm({ availableTimes, updateTimes }) {
 
   return (
     <div>
-      <form className="bookingForm" onSubmit={handleSubmit}>
-        <label htmlFor="reserve-date">Choose date</label>
+      <form className="bookingForm" onSubmit={handleSubmit} aria-labelledby="booking-form">
+        <label htmlFor="reserve-date" aria-label="Choose a reservation date">Choose date</label>
         <input
           className="bookingInput"
           type="date"
           id="reserve-date"
           value={date}
           onChange={handleDateChange}
+          aria-required="true" // Indica que este campo es obligatorio
         />
-        <label htmlFor="reserve-time">Choose time</label>
+
+        <label htmlFor="reserve-time" aria-label="Choose a time for your reservation">Choose time</label>
         <select
           className="bookingSelect"
           id="reserve-time"
           value={time}
           onChange={(e) => setTime(e.target.value)}
+          aria-required="true" // Indica que este campo es obligatorio
         >
           {availableTimes.length > 0 ? (
             availableTimes.map((availableTime) => (
@@ -69,10 +72,11 @@ function BookingForm({ availableTimes, updateTimes }) {
               </option>
             ))
           ) : (
-            <option value="">No available times</option>
+            <option value="" disabled>No available times</option>
           )}
         </select>
-        <label htmlFor="reserve-guests">Number of guests</label>
+
+        <label htmlFor="reserve-guests" aria-label="Number of guests for the reservation">Number of guests</label>
         <input
           className="bookingInput"
           id="reserve-guests"
@@ -81,24 +85,31 @@ function BookingForm({ availableTimes, updateTimes }) {
           onChange={(e) => setGuests(e.target.value)}
           min="1"
           max="10"
+          aria-required="true" // Indica que este campo es obligatorio
         />
-        <label htmlFor="reserve-ocassion">Occasion</label>
+
+        <label htmlFor="reserve-ocassion" aria-label="Select the occasion for your reservation">Occasion</label>
         <select
           className="bookingSelect"
           id="reserve-ocassion"
           value={ocassion}
           onChange={(e) => setOcassion(e.target.value)}
+          aria-required="true" // Indica que este campo es obligatorio
         >
           <option value="Regular">Regular</option>
           <option value="Birthday">Birthday</option>
           <option value="Anniversary">Anniversary</option>
           <option value="Wedding">Wedding</option>
         </select>
-        <button type="submit" className="bookingButton">Make your reservation</button>
+
+        <button type="submit" className="bookingButton" aria-label="Submit reservation form">
+          Make your reservation
+        </button>
+
         {reservationConfirmed && (
-          <div className="confirmationMessage">
+          <div className="confirmationMessage" role="alert">
             <p>✔ Your reservation has been confirmed!</p>
-            <button onClick={handleCloseForm}>
+            <button onClick={handleCloseForm} aria-label="Close confirmation">
               Close
             </button>
           </div>
