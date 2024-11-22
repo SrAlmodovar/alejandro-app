@@ -1,4 +1,4 @@
-body {
+body, html {
   margin: 0 auto;
   background-color: var(--secondary3-color);
   font-family: -apple-system, 'Karla', 'Roboto', BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
@@ -6,6 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 }
 
 code {

@@ -2,7 +2,7 @@ import React from "react";
 
 function About(){
   return (
-    <div className="contenedorPrincipal boxAboutMain">
+    <div id="about" className="contenedorPrincipal boxAboutMain">
       <section className="boxAbout1">
       <h1>Little Lemon</h1>
       <h2>Chicago</h2>
@@ -14,8 +14,8 @@ function About(){
       </p>
       </section>
       <section className="boxAbout2">
-    <img className="boxAbout2Img1" src="/Icons_assets/Mario-and-Adrian-b.webp" />
-    <img className="boxAbout2Img2" src="/Icons_assets/Mario-and-Adrian-A.webp" />
+    <img className="boxAbout2Img1" alt="Mario and Adrian" src="/Icons_assets/Mario-and-Adrian-b.webp" />
+    <img className="boxAbout2Img2" alt="Mario and Adrian" src="/Icons_assets/Mario-and-Adrian-A.webp" />
       </section>
     </div>
   );

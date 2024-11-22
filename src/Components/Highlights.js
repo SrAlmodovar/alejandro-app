@@ -31,7 +31,7 @@ function Highlights(){
     ]
   };
   return (
-    <section className="contenedorPrincipal">
+    <section id="menu" className="contenedorPrincipal">
       <div className="highBox1">
         <h2>Specials</h2>
         <button>Online Menu</button>

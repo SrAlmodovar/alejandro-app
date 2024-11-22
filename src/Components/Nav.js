@@ -1,7 +1,7 @@
 import React from "react"; // Importa React (necesario para componentes en versiones anteriores de React)
 import { useState } from "react"; // Importa el hook useState para manejar el estado dentro del componente
 
-function Header() {
+function Header({ toggleReserve }) {
   // Define un estado llamado "menuVisible" para controlar si el menú es visible o no
   const [menuVisible, setMenuVisible] = useState(false);
 
@@ -11,7 +11,7 @@ function Header() {
   };
 
   return (
-      <nav>
+      <nav id="home">
         <div className="navBar contenedorPrincipal">
           <div className="logo">
             <a href="#home">
@@ -30,14 +30,25 @@ function Header() {
             <img src="/Icons_assets/menu.svg" alt="Menu Boton"></img>
           </a>
           {/* Lista de enlaces del menú. La clase cambia entre "visible" y "hidden" según el estado menuVisible */}
-          <ul className={`enlacesMenu ${menuVisible ? "visible" : "oculto"}`}>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#reservations">Reservations</a></li>
-            <li><a href="#orderonline">Order Online</a></li>
-            <li><a href="#login">Login</a></li>
-          </ul>
+            <ul className={`enlacesMenu ${menuVisible ? "visible" : "oculto"}`}>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a
+                className="reserveDisplay"
+                href="#reservations"
+                onClick={(e) => {
+                  e.preventDefault();
+                  if (menuVisible) {
+                    setMenuVisible(false); // Cierra el menú si está visible
+                  }
+                  toggleReserve(); // Llama a la función para mostrar las reservas
+                }}
+              >
+              Reservations</a></li>
+              <li><a href="#orderonline">Order Online</a></li>
+              <li><a href="#login">Login</a></li>
+            </ul>
         </div>
       </nav>
   );
